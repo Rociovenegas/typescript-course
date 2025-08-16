@@ -6,4 +6,5 @@
     }
     
     console.log(abc('test'));
+    
 })();

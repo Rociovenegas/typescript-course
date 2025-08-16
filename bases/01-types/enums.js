@@ -11,4 +11,3 @@ Object.defineProperty(exports, "__esModule", { value: true });
     console.log(currentAudio);
     console.log(AudioLevel);
 })();
-//# sourceMappingURL=enums.js.map

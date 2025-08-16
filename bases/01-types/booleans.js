@@ -7,4 +7,3 @@ Object.defineProperty(exports, "__esModule", { value: true });
     //isSuperman = ( isBatman ) ? true: false;
     console.log({ isSuperman });
 })();
-//# sourceMappingURL=booleans.js.map

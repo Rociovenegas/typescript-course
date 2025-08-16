@@ -6,4 +6,3 @@ Object.defineProperty(exports, "__esModule", { value: true });
     };
     console.log(abc('test'));
 })();
-//# sourceMappingURL=never.js.map

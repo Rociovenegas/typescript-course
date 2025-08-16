@@ -7,4 +7,3 @@ Object.defineProperty(exports, "__esModule", { value: true });
     hero[2] = false;
     console.log({ hero });
 })();
-//# sourceMappingURL=tuples.js.map

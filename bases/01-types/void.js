@@ -10,4 +10,3 @@ Object.defineProperty(exports, "__esModule", { value: true });
     const a = callBatman();
     console.log(a);
 })();
-//# sourceMappingURL=void.js.map

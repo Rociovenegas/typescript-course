@@ -12,4 +12,3 @@ Object.defineProperty(exports, "__esModule", { value: true });
     console.log(exists);
     console.log(power);
 })();
-//# sourceMappingURL=any.js.map

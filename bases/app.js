@@ -8,4 +8,3 @@ Object.defineProperty(exports, "__esModule", { value: true });
     }
     sayHello(b);
 })();
-//# sourceMappingURL=app.js.map

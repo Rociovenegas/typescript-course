@@ -8,4 +8,3 @@ Object.defineProperty(exports, "__esModule", { value: true });
     console.log(batman.toUpperCase());
     console.log(batman[10]?.toUpperCase() || 'Not present');
 })();
-//# sourceMappingURL=strings.js.map

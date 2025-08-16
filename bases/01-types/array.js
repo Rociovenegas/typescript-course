@@ -9,4 +9,3 @@ Object.defineProperty(exports, "__esModule", { value: true });
     const cats = ['Jhonny', 'Gaby', 'Monga'];
     cats.forEach(v => console.log(v.toUpperCase()));
 })();
-//# sourceMappingURL=array.js.map

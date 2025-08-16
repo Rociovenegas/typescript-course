@@ -13,4 +13,3 @@ Object.defineProperty(exports, "__esModule", { value: true });
     avengers = Number('5A');
     console.log({ avengers });
 })();
-//# sourceMappingURL=numbers.js.map
