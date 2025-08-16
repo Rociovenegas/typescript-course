@@ -1,9 +1,15 @@
+(() => {
+    const a:number = 10;
+    let b: string = 'Cats'
 
-let msg: string = 'Hola Mundo!!!!';
+    function sayHello( msg:string ){
+        console.log(`Hello! ${msg}`);
+    }
 
-let hero = {
-    name: 'Ironman',
-    age: 45
-}
+    sayHello(b);
 
-console.log({hero});
+
+})(); 
+
+
+
