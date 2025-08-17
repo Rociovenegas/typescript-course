@@ -34,6 +34,7 @@ const unirTest = unirheroes("Flash", "Arrow", "Superman", "Linterna Verde");
 console.log(`unirTest: ${unirTest}`);
 // Tipo funcion
 // const noHaceNada = ( numero, texto, booleano, arreglo )=> {}
+// creo que no entedi bien el ejercicio pero si lo que se queria estudiar con el ejercicio xd
 const printNumber = (a) => console.log(`printNumber: ${a}`);
 const printString = (text) => console.log(`printText: ${text}`);
 const printBoolean = (someBoolean) => console.log(`printboolean: ${someBoolean}`);

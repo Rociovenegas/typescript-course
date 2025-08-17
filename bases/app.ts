@@ -11,7 +11,7 @@ console.log(sumarTest);
 // }
 
 const contar = ( heroes: string[] ): number => heroes.length;
-const superHeroes = ["Flash", "Arrow", "Superman", "Linterna Verde"];
+const superHeroes: string[] = ["Flash", "Arrow", "Superman", "Linterna Verde"];
 const contarTest = contar(superHeroes);
 console.log(contarTest);
 
@@ -37,12 +37,12 @@ const unirheroes = ( ...heroes: string[] ): string => {
     return heroes.join(", ");
 }
 
-const unirTest = unirheroes("Flash", "Arrow", "Superman", "Linterna Verde");
+const unirTest: string = unirheroes("Flash", "Arrow", "Superman", "Linterna Verde");
 console.log(`unirTest: ${unirTest}`);
 
 // Tipo funcion
 // const noHaceNada = ( numero, texto, booleano, arreglo )=> {}
-
+// creo que no entedi bien el ejercicio pero si lo que se queria estudiar con el ejercicio xd
 const printNumber = ( a: number ):void => console.log(`printNumber: ${a}`);
 const printString = ( text: string ):void => console.log(`printText: ${text}`); 
 const printBoolean = ( someBoolean:boolean ):void => console.log(`printboolean: ${someBoolean}`);
