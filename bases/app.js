@@ -11,10 +11,14 @@ Object.defineProperty(exports, "__esModule", { value: true });
     // Arreglos
     const aliados = ['Mujer Maravilla', 'Acuaman', 'San', 'Flash'];
     //Enumeraciones
-    const fuerzaFlash = 5;
-    const fuerzaSuperman = 100;
-    const fuerzaBatman = 1;
-    const fuerzaAcuaman = 0;
+    let fuerzaSuperHeroes;
+    (function (fuerzaSuperHeroes) {
+        fuerzaSuperHeroes[fuerzaSuperHeroes["fuerzaFlash"] = 5] = "fuerzaFlash";
+        fuerzaSuperHeroes[fuerzaSuperHeroes["fuerzaSuperman"] = 100] = "fuerzaSuperman";
+        fuerzaSuperHeroes[fuerzaSuperHeroes["fuerzaBatman"] = 1] = "fuerzaBatman";
+        fuerzaSuperHeroes[fuerzaSuperHeroes["fuerzaAcuaman"] = 0] = "fuerzaAcuaman";
+    })(fuerzaSuperHeroes || (fuerzaSuperHeroes = {}));
+    //console.log({ fuerzaSuperHeroes });
     // Retorno de funciones
     function activar_batiseñal() {
         return 'activada';
@@ -24,6 +28,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
     }
     // Aserciones de Tipo
     const poder = '100';
+    //const largoDelPoder:number = (poder.length);
     const largoDelPoder = poder.length;
     console.log(largoDelPoder);
 })();
