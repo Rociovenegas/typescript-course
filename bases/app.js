@@ -13,11 +13,15 @@ Object.defineProperty(exports, "__esModule", { value: true });
     //Enumeraciones
     let fuerzaSuperHeroes;
     (function (fuerzaSuperHeroes) {
+        fuerzaSuperHeroes[fuerzaSuperHeroes["fuerzaAcuaman"] = 0] = "fuerzaAcuaman";
+        fuerzaSuperHeroes[fuerzaSuperHeroes["fuerzaBatman"] = 1] = "fuerzaBatman";
         fuerzaSuperHeroes[fuerzaSuperHeroes["fuerzaFlash"] = 5] = "fuerzaFlash";
         fuerzaSuperHeroes[fuerzaSuperHeroes["fuerzaSuperman"] = 100] = "fuerzaSuperman";
-        fuerzaSuperHeroes[fuerzaSuperHeroes["fuerzaBatman"] = 1] = "fuerzaBatman";
-        fuerzaSuperHeroes[fuerzaSuperHeroes["fuerzaAcuaman"] = 0] = "fuerzaAcuaman";
     })(fuerzaSuperHeroes || (fuerzaSuperHeroes = {}));
+    const fuerzaAcuaman = fuerzaSuperHeroes.fuerzaAcuaman;
+    const fuerzaBatman = fuerzaSuperHeroes.fuerzaBatman;
+    const fuerzaFlash = fuerzaSuperHeroes.fuerzaFlash;
+    const fuerzaSuperman = fuerzaSuperHeroes.fuerzaSuperman;
     //console.log({ fuerzaSuperHeroes });
     // Retorno de funciones
     function activar_batiseñal() {

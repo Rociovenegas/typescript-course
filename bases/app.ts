@@ -16,11 +16,16 @@
     //Enumeraciones
 
     enum fuerzaSuperHeroes {
+      fuerzaAcuaman = 0,
+      fuerzaBatman = 1,
       fuerzaFlash = 5,
       fuerzaSuperman = 100,
-      fuerzaBatman = 1,
-      fuerzaAcuaman = 0,
     }
+
+    const fuerzaAcuaman: fuerzaSuperHeroes = fuerzaSuperHeroes.fuerzaAcuaman;
+    const fuerzaBatman: fuerzaSuperHeroes = fuerzaSuperHeroes.fuerzaBatman;
+    const fuerzaFlash: fuerzaSuperHeroes = fuerzaSuperHeroes.fuerzaFlash;
+    const fuerzaSuperman: fuerzaSuperHeroes = fuerzaSuperHeroes.fuerzaSuperman;
 
     //console.log({ fuerzaSuperHeroes });
   
