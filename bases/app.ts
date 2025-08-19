@@ -1,69 +1,122 @@
-// Funciones Básicas
-// function sumar( a, b ){
-//   return a + b;
-// }
+type Car = {
+    bodywork: string;
+    model: string,
+    bulletproof: boolean;
+    passengers: number;
+    shoot?: () => void;
+};
 
-const sumar = (a: number, b: number ): number =>  a + b;
-const sumarTest = sumar( 5 ,6 );
-console.log(sumarTest);
-// const contar = ( heroes ) => {
-//   return heroes.length;
-// }
+// Objetos
+// const batimovil = {
+//   carroceria: "Negra",
+//   modelo: "6x6",
+//   antibalas: true,
+//   pasajeros:4
+// };
 
-const contar = ( heroes: string[] ): number => heroes.length;
-const superHeroes: string[] = ["Flash", "Arrow", "Superman", "Linterna Verde"];
-const contarTest = contar(superHeroes);
-console.log(contarTest);
+const batimovil: (Car) = {
+    bodywork: "Black",
+    model: "6x6",
+    bulletproof: true,
+    passengers:4
+};
 
-
-//Parametros por defecto
-// const llamarBatman = ( llamar ) => {
-//   if( llamar ){
-//     console.log("Batiseñal activada");
+// const bumblebee = {
+//   carroceria: "Amarillo con negro",
+//   modelo: "4x2",
+//   antibalas: true,
+//   pasajeros:4,
+//   disparar(){ // El metodo disparar es opcional
+//     console.log("Disparando");
 //   }
-// }
+// };
 
-const llamarBatman = ( llamar:boolean = false ): void =>  llamar? console.log("Batiseñal!"): console.log("No Batiseñal :c");
+const bumblebee: (Car) = {
+    bodywork: "Yello with Black",
+    model: "4x2",
+    bulletproof: true,
+    passengers:4,
+    shoot() { console.log("shooting"); }
+};
 
-llamarBatman();
-llamarBatman(true);
+console.log(`batimovil: `,
+    batimovil);
 
-// Rest?
-// const unirheroes = ( personas ) => {
-//   return personas.join(", ");
-// }
+console.log(`bumblebee: `,
+    bumblebee);
 
-const unirheroes = ( ...heroes: string[] ): string => {
-    return heroes.join(", ");
+
+type Villain = {
+    name: string;
+    age?: number;
+    mutant: boolean;
+};
+
+
+// // Villanos debe de ser un arreglo de objetos personalizados
+// const villanos = [{
+//   nombre:"Lex Luthor",
+//   edad: 54,
+//   mutante:false
+// },{
+//   nombre: "Erik Magnus Lehnsherr",
+//   edad: 49,
+//   mutante: true
+// },{
+//   nombre: "James Logan",
+//   edad: undefined,
+//   mutante: true
+// }];
+
+let villains: Villain[] = [
+    {name: 'Lex Luyhor', age: 54, mutant: false},
+    {name: 'Erik Magnus Lehnsherr', age: 49, mutant: true},
+    {name: 'James Logan', mutant: true}
+];
+
+console.log(`villianins: `,
+    villains);
+
+// Multiples tipos
+// cree dos tipos, uno para charles y otro para apocalipsis
+
+type Charles = {
+  power: string;
+  stature: number;
+};
+
+type Apocalypse = {
+  leader: boolean;
+  members: string[];
+};
+
+type Mystique = ( Charles| Apocalypse);
+
+const charles: Charles =  {
+  power:"psiquico",
+  stature: 1.78
+};
+
+const apocalipsis: Apocalypse = {
+  leader:true,
+  members: ["Magneto","Tormenta","Psylocke","Angel"]
 }
 
-const unirTest: string = unirheroes("Flash", "Arrow", "Superman", "Linterna Verde");
-console.log(`unirTest: ${unirTest}`);
+console.log(`apocalipsis: `,
+    apocalipsis);
 
-// Tipo funcion
-// const noHaceNada = ( numero, texto, booleano, arreglo )=> {}
-// creo que no entedi bien el ejercicio pero si lo que se queria estudiar con el ejercicio xd
-const printNumber = ( a: number ):void => console.log(`printNumber: ${a}`);
-const printString = ( text: string ):void => console.log(`printText: ${text}`); 
-const printBoolean = ( someBoolean:boolean ):void => console.log(`printboolean: ${someBoolean}`);
-const printArray = ( someArray: string[] ):void => console.log(`printArray: ${someArray}`);
+console.log(`charles: `,
+    charles);
 
-let myFunctionNumber: ( x:number ) => void;
-let myFunctionString: ( x:string ) => void;
-let myFunctionBoolean: ( x:boolean ) => void;
-let myFunctionArray: ( x:string[] ) => void;
-
-myFunctionNumber = printNumber;
-myFunctionString = printString;
-myFunctionBoolean = printBoolean; 
-myFunctionArray = printArray;
-
-myFunctionNumber(5);
-myFunctionString('Hello');
-myFunctionBoolean(true);
-myFunctionArray(['Hello', 'Kittens']);
+// Mystique, debe poder ser cualquiera de esos dos mutantes (charles o apocalipsis)
+let mystique: (Mystique);
 
 
-// // Crear el tipo de funcion que acepte la funcion "noHaceNada"
-// let noHaceNadaTampoco;
-// noHaceNadaTampoco = noHaceNada
+// console.log(mystique);
+mystique = charles;
+console.log(`mystique: `,
+    mystique);
+mystique = apocalipsis;
+console.log(`mystique: `,
+    mystique);
+
