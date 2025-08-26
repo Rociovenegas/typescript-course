@@ -3,15 +3,18 @@ import typescriptLogo from './typescript.svg'
 import viteLogo from '/vite.svg'
 import { setupCounter } from './counter.ts'
 import { App } from './app.ts';
-const modules = import.meta.glob('./bases/04-ES6/*.ts');
-// import './bases/03-objects/objects.ts';
+//const modules = import.meta.glob('./bases/04-ES6/*.ts');
+import './bases/05-classes/abstract.ts';
+import './bases/05-classes/basica.ts';
+import './bases/05-classes/extends.ts';
+import './bases/05-classes/private-constructor.ts';
 
 // // Esto importa todos los archivos, pero como módulos asíncronos
-for (const path in modules) {
-  modules[path]().then((mod) => {
-     console.log(`Módulo cargado: ${path}`, mod);
-   });
- }
+// for (const path in modules) {
+//   modules[path]().then((mod) => {
+//     console.log(`Módulo cargado: ${path}`, mod);
+//   });
+// }
 
 
 const root = document.getElementById('app');
